@@ -1,0 +1,52 @@
+/*fonts*/
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/TTNorms-Bold.woff2") format("woff2"),
+      url("../fonts/TTNorms-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'TT Norms';
+  src: url('../fonts/TTNormsPro-Medium.woff2') format('woff2'),
+      url('../fonts/TTNormsPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "TT Norms";
+  src: url("../fonts/TTNorms-Regular.woff2") format("woff2"),
+      url("../fonts/TTNorms-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*general styles*/
+.body {
+	padding: 0;
+	margin: 0;
+	font-family: "TT Norms", "Arial", sans-serif;
+	box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+.main {
+	width: 1920px;
+	padding: 0 20px;
+}
+.visually-hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px);
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important; 
+	width: 1px !important; 
+	overflow: hidden;
+}

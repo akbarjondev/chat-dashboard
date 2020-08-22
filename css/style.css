@@ -240,6 +240,15 @@
 }
   .profile__log-out::before {
     content: "";
+    width: 24px;
+    height: 24px;
+    margin-right: 18px;
+    margin-left: 38px;
+    background-image: url("../img/power.svg");
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
   }
 
 

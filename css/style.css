@@ -72,7 +72,7 @@
   width: 290px;
   height: 1080px;
   padding-bottom: 48px;
-  background: var(--main-white);
+  background-color: var(--main-white);
   box-shadow: 15px 0px 57px 8px rgba(86, 128, 248, 0.1);
 }
 .add-profile {

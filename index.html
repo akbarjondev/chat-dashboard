@@ -11,9 +11,56 @@
 </head>
 <body class="body">
 	<div class="main">
+		<div class="dashboard">
 
-		<!-- qismlar shu MAIN ichida quriladi -->
-	
+			<div class="profile">
+				<div class="add-profile">
+					<a class="profile__photo-link" href="#">
+						<img class="profile__photo" src="img/henry-avatar.jpg" srcset="img/henry-avatar.jpg 1x, img/henry-avatar@2x.jpg 2x" alt="Henry Jabbawockiez" width="86" height="86">
+					</a>
+
+					<ul class="profile__change">
+						<li class="profile__change-item">
+							<a class="profile__change-link" id="jsDropdownButton" href="#">Henry Jabbawockiez</a>
+							<ul class="profile__dropdown" id="jsDropdown">
+								<li class="dropdown_item">
+									<a class="dropdown__link" href="#">Change photo</a>
+								</li>
+								<li class="dropdown_item">
+									<a class="dropdown__link" href="#">Add account</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- End of add-profile -->
+
+				<ul class="profile__menu">
+					<li class="menu__item">
+						<a href="#" class="menu__link menu__home">Home</a>
+					</li>
+					<li class="menu__item active">
+						<a href="#" class="menu__link menu__chat">Chat</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link menu__contact">Contact</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link menu__notifications">Notifications</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link menu__calendar">Calendar</a>
+					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link menu__settings">Settings</a>
+					</li>
+				</ul><!-- End of profile-menu -->
+
+				<div class="log-out">
+					<a class="profile__log-out" href="#">Log Out</a>
+				</div>
+			</div><!-- End of profile -->
+			
+		</div><!-- End of dashboard -->
 	</div><!-- End of main -->
 
 	<script src="js/script.js"></script>

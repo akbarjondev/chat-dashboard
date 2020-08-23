@@ -320,6 +320,10 @@
 .search-input::placeholder {
   color: #707C97;
 }
+select {
+  background: none;
+  border: none;
+}
 .select {
   font-weight: 500;
   line-height: 26px;
@@ -328,6 +332,8 @@
   border: none;
   outline: none;
   margin-right: 20px;
+  background: none;
+  border: none;
 }
 .searcher-img {
   width: 24px;

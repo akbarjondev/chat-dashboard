@@ -63,6 +63,9 @@
 
 /*profile*/
 .dashboard {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   background: linear-gradient(180deg, #f3f3fb 0%, #fdfbfd 100%);
 }
 .profile {
@@ -126,7 +129,7 @@
   list-style-type: none; 
 }
 .dropdown-on {
-  display: block;
+  display: block !important;
 }
 .dropdown_item {
   padding-top: 10px;
@@ -251,4 +254,90 @@
     background-repeat: no-repeat;
   }
 
-
+/*chats*/
+.chats {
+  width: 596px;
+  margin-top: 110px;
+  margin-left: 60px;
+}
+.chats__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.chats__heading {
+  margin: 0;
+  margin-bottom: 15px;
+  font-size: 36px;
+  line-height: 26px;
+  font-weight: 500;
+}
+.chats__recent {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.chats__recent-item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  line-height: 26px;
+  color: var(--main-gray-blue);
+  cursor: pointer;
+}
+  .chats__recent-item::after {
+    content: "";
+    width: 16px;
+    height: 16px;
+    margin-top: 3px;
+    margin-right: 7px;
+    background-image: url("../img/g-chevron-down.svg");
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+.chats__dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.chats__dropdown-item:hover {
+  text-decoration: underline;
+}
+.chats__button {
+  display: flex;
+  align-items: center;
+  padding: 18px 25px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--main-white);
+  background: linear-gradient(92.68deg, #7cb8f7 0%, #2a8bf2 100%);
+  box-shadow: 6px 6px 25px rgba(42, 139, 242, 0.15), 
+              4px 4px 25px rgba(42, 139, 242, 0.05), 
+              10px 6px 25px rgba(42, 139, 242, 0.15);
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+  .chats__button::before {
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-right: 7px;
+    background-image: url("../img/plus.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+  .chats__button:active {
+    transform: scale(0.99);
+  }

@@ -10,13 +10,19 @@
 </head>
 <body class="body">
 	<div class="main">
-
 		<section class="accaunt-page">
 			<div class="info-accaunt">
 				<a href="#" class="accaunt-logo">
 					<img class="user-logo" src="img/henry-avatar.jpg" srcset="img/henry-avatar.jpg 1x, img/henry-avatar@2x.jpg 2x" alt="User's avatar logo">
 				</a>
-				<h3 class="username">Henry Jabbawockiez</h3>
+				<form class="accaunt-form" action="https://echo.htmlacademy.ru">
+					<select class="selector" name="messages" id="messages">
+						<option value="messages">Henry Jabbawockiez</option>
+						<option value="messages">MuhammadJavohir</option>
+						<option value="messages">Muhammadxon</option>
+						<option value="messages">MuhammadYunus</option>
+					</select>
+				</form>
 			</div>
 			<nav class="site-nav">
 				<ul class="pages-list">
@@ -30,8 +36,85 @@
 				</ul>
 			</nav>
 		</section>
+		<section class="recent-chats">
+			<header class="recent-chat-header">
+				<div class="box-recent-chat">
+					<h3 class="chat-heading">Chats</h3>
+					<p class="chat-text">Recent Chats</p>
+				</div>
+				<button class="create-chat">Create new Chat</button>
+			</header>
+			<form class="search-list" action="https://echo.htmlacademy.ru" method="POST">
+				<span class="main-searcher">
+					<img src="img/search.svg" alt="Searcher" class="searcher-img" width="24" height="24">
+				</span>
+				<input class="search-input" type="search" placeholder="Search" required>
+				<select class="select" name="messages" id="messages">
+					<option value="messages">Messages</option>
+					<option value="messages">Messages</option>
+					<option value="messages">Messages</option>
+					<option value="messages">Messages</option>
+					<option value="messages">Messages</option>
+					<option value="messages">Messages</option>
+				</select>
+			</form>
+			
+			<div class="user-box">
+				<div class="box-item">
+					<box class="box-wrapper green">
+						<img class="human-logo" src="img/women.png" srcset="img/women.png 1x, img/women@2x.png 2x" alt="women logo" width="54" height="54">
+						<div class="about-user">
+							<h3 class="human-name">Luy Robin</h3>
+							<p class="human-action">writes</p>
+							<hr class="main-line">
+						</div>
+						<time class="time-messages" datetime="2020-08-23 15:23">1 minute ago</time>
+					</box>
+					<p class="messages-text">Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes.</p>
+				</div>
+				
+				<div class="box-item">
+					<box class="box-wrapper green">
+						<img class="human-logo" src="img/man.png" srcset="img/man.png 1x, img/man@2x.png 2x" alt="women logo" width="54" height="54">
+						<div class="about-user">
+							<h3 class="human-name">Jared Sunn</h3>
+							<p class="records">records voice message</p>
+							<hr class="recording-line">
+						</div>
+						<time class="time-messages" datetime="2020-08-23 15:23">1 minute ago</time>
+					</box>
+					<time class="time-voice-messages" datetime="2020-08-23 15:23">Voice message (01:15)</time>
+					<div class="files-box">
+						<a href="#" class="text-file">Files (x2)</a>
+						<a href="#" class="img-file">Photo</a>
+					</div>
+				</div>
+				
+				<div class="box-item">
+					<box class="box-wrapper">
+						<img class="nika-logo" src="img/nika.png" srcset="img/nika.png 1x, img/nika@2x.png 2x" alt="nika logo" width="54" height="54">
+						<div class="about-user">
+							<h3 class="human-name">Nika Jerrardo</h3>
+							<p class="nika-action">last online 5 hours ago</p>
+						</div>
+						<time class="nikas-online" datetime="2020-08-20 15:23">3 days ago</time>
+					</box>
+					<p class="nikas-text">Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
+				</div>
+				
+				<div class="box-item">
+					<box class="box-wrapper">
+						<img class="david-logo" src="img/david.png" srcset="img/david.png 1x, img/david.png@2x.png 2x" alt="david.png logo" width="54" height="54">
+						<div class="about-user">
+							<h3 class="human-name">david Amrosa</h3>
+							<p class="david-action">last online 44 minut ago</p>
+						</div>
+						<time class="time-messages" datetime="2020-08-23 15:23">44 minute ago</time>
+					</box>
+					<p class="messages-text">Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes.</p>
+				</div>
+			</div>
+		</section>
 	</div>
-
-	<script src="js/script.js"></script>
 </body>
 </html>

@@ -4,118 +4,71 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Chat Dashboard</title>
+  
 	<link rel="stylesheet" href="css/normalize.css">
 	<!-- <link rel="stylesheet" href="css/style.min.css"> -->
 	<link rel="stylesheet" href="css/style.css">	
 </head>
 <body class="body">
 	<div class="main">
-		<section class="accaunt-page">
-			<div class="info-accaunt">
-				<a href="#" class="accaunt-logo">
-					<img class="user-logo" src="img/henry-avatar.jpg" srcset="img/henry-avatar.jpg 1x, img/henry-avatar@2x.jpg 2x" alt="User's avatar logo">
-				</a>
-				<form class="accaunt-form" action="https://echo.htmlacademy.ru">
-					<select class="selector" name="messages" id="messages">
-						<option value="messages">Henry Jabbawockiez</option>
-						<option value="messages">MuhammadJavohir</option>
-						<option value="messages">Muhammadxon</option>
-						<option value="messages">MuhammadYunus</option>
-					</select>
-				</form>
-			</div>
-			<nav class="site-nav">
-				<ul class="pages-list">
-					<li class="pages-item"><a href="#" class="pages-link home">Home</a></li>
-					<li class="pages-item"><a href="#" class="pages-link chat">Chat</a></li>
-					<li class="pages-item"><a href="#" class="pages-link contact">Contact</a></li>
-					<li class="pages-item"><a href="#" class="pages-link notifications">Notifications</a></li>
-					<li class="pages-item"><a href="#" class="pages-link calendar">Calendar</a></li>
-					<li class="pages-item"><a href="#" class="pages-link settings">Settings</a></li>
-					<li class="pages-item"><a href="#" class="pages-link logout">Log out</a></li>
-				</ul>
-			</nav>
-		</section> <!-- end of users accaunt page -->
-		<section class="recent-chats">
-			<header class="recent-chat-header">
-				<div class="box-recent-chat">
-					<h3 class="chat-heading">Chats</h3>
-					<p class="chat-text">Recent Chats</p>
+		<div class="toolbar">
+			<div class="toolbar-user">
+				<img class="user-avatar" src="img/henry-avatar.jpg" alt="henry user" srcset="img/henry-avatar.jpg 1x, img/henry-avatar@2x.jpg 2x" width="86" height="86">
+				<div class="user-name">
+					
+					<ul class="arrow">
+						<li class="has-dropdown">
+							<a class="dropdown-link" href="#">
+								<p>Henry Jabbawockiez</p>
+								<img src="img/chevron-down.svg" alt="down arrow">
+								<ul class="dropdown">
+									<li><a class="dropdown-list" href="#">Lorem</a></li>
+									<li><a class="dropdown-list" href="#">Lorem</a></li>
+									<li><a class="dropdown-list" href="#">Lorem</a></li>
+									<li><a class="dropdown-list" href="#">Lorem</a></li>
+								</ul>
+							</a>
+						</li>
+					</ul>
 				</div>
-				<button class="create-chat">Create new Chat</button>
-			</header>
-			<form class="search-list" action="https://echo.htmlacademy.ru" method="POST">
-				<span class="main-searcher">
-					<img src="img/search.svg" alt="Searcher" class="searcher-img" width="24" height="24">
-				</span>
-				<input class="search-input" type="search" placeholder="Search" required>
-				<select class="select" name="messages" id="messages">
-					<option value="messages">Messages</option>
-					<option value="messages">Messages</option>
-					<option value="messages">Messages</option>
-					<option value="messages">Messages</option>
-					<option value="messages">Messages</option>
-					<option value="messages">Messages</option>
-				</select>
-			</form><!-- end of users search list page -->
+			</div> <!-- End of toolbar use -->
 			
-			<div class="user-box">
-				<div class="box-item">
-					<box class="box-wrapper green">
-						<img class="human-logo" src="img/women.png" srcset="img/women.png 1x, img/women@2x.png 2x" alt="women logo" width="54" height="54">
-						<div class="about-user">
-							<h3 class="human-name">Luy Robin</h3>
-							<p class="human-action">writes</p>
-							<hr class="main-line">
-						</div>
-						<time class="time-messages" datetime="2020-08-23 15:23">1 minute ago</time>
-					</box>
-					<p class="messages-text">Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes.</p>
-				</div>
+			<div class="toolbar-menu">
+				<ul class="tools-list">
+					<li>
+						<div class="box"></div>
+						<a class="menu-item" href="">Home</a></li>
+					<li>
+						<div class="box"></div>
+						<a class="menu-item" href="">Chat</a>
+					</li>
+					<li>
+						<div class="box"></div>
+						<a class="menu-item" href="">Contact</a>
+					</li>
+					<li>
+						<div class="box"></div>
+						<a class="menu-item" href="">Notifications</a>
+					</li>
+					<li>
+						<div class="box"></div>
+						<a class="menu-item" href="">Calendar</a>
+					</li>
+					<li>
+						<div class="box"></div>
+						<a class="menu-item" href="">Settings</a>
+					</li>
+				</ul>
+			</div> <!-- End of toolbar-menu -->
+			
+			<div class="toolbar-footer">
 				
-				<div class="box-item">
-					<box class="box-wrapper green">
-						<img class="human-logo" src="img/man.png" srcset="img/man.png 1x, img/man@2x.png 2x" alt="women logo" width="54" height="54">
-						<div class="about-user">
-							<h3 class="human-name">Jared Sunn</h3>
-							<p class="records">records voice message</p>
-							<hr class="recording-line">
-						</div>
-						<time class="time-messages" datetime="2020-08-23 15:23">1 minute ago</time>
-					</box>
-					<time class="time-voice-messages" datetime="2020-08-23 15:23">Voice message (01:15)</time>
-					<div class="files-box">
-						<a href="#" class="text-file">Files (x2)</a>
-						<a href="#" class="img-file">Photo</a>
-					</div>
-				</div>
+				<p>Log out</p>
 				
-				<div class="box-item">
-					<box class="box-wrapper">
-						<img class="nika-logo" src="img/nika.png" srcset="img/nika.png 1x, img/nika@2x.png 2x" alt="nika logo" width="54" height="54">
-						<div class="about-user">
-							<h3 class="human-name">Nika Jerrardo</h3>
-							<p class="nika-action">last online 5 hours ago</p>
-						</div>
-						<time class="nikas-online" datetime="2020-08-20 15:23">3 days ago</time>
-					</box>
-					<p class="nikas-text">Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
-				</div>
-				
-				<div class="box-item">
-					<box class="box-wrapper">
-						<img class="david-logo" src="img/david.png" srcset="img/david.png 1x, img/david@2x.png 2x" alt="david.png logo" width="54" height="54">
-						<div class="about-user">
-							<h3 class="human-name">david Amrosa</h3>
-							<p class="david-action">last online 44 minut ago</p>
-						</div>
-						<time class="time-messages" datetime="2020-08-23 15:23">44 minute ago</time>
-					</box>
-					<p class="messages-text">Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes.</p>
-				</div>
-
-			</div><!-- end of users chat-box page -->
-		</section><!-- end of users chat page -->
-	</div>
+			</div> <!-- End of toolbar footer -->
+		</div> <!-- End of toolbar -->
+	</div><!-- End of main -->
+	
+	<script src="js/script.js"></script>
 </body>
 </html>

@@ -46,6 +46,9 @@
 	box-sizing: inherit;
 }
 .main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 	width: 1920px;
 	padding: 0 20px;
   margin: 0 auto;
@@ -69,7 +72,6 @@
   padding: 50px 0;
   box-shadow: 14.0351px 0px 25px rgba(76, 119, 236, 0.03), 35.0877px 0px 70px rgba(86, 128, 248, 0.05), 23.8596px 5.61404px 50px rgba(0, 0, 0, 0.05);
 }
-
 .toolbar-user {
   padding: 50px 0px;
   text-align: center;
@@ -160,7 +162,7 @@
   line-height: 19px;
   text-transform: uppercase;
   color: #707C97;
-  font-weight: 500;
+  font-weight: 700;
   margin-left: 10px;
 }
 .tools-list li {
@@ -233,16 +235,17 @@
   padding: 100px 0 0 0 ;
   text-align: center;
 }
-.toolbar-footer p {
+.toolbar-footer a {
+  display: flex;
+  align-items: center;
+  padding-left: 38px;
   margin: 0;
+  text-decoration: none;
   font-size: 16px;
+  font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   color: #707C97;
-  font-weight: 500;
-  display: flex;
-  padding-left: 38px;
-  align-items: center;
 }
 .toolbar-footer:hover .box {
   background-image: url("../img/b-power.svg");
@@ -254,7 +257,7 @@
   width: 24px;
   height: 24px;
 }
-.toolbar-footer p::before {
+.toolbar-footer a::before {
   content: "";
   width: 24px;
   height: 24px;

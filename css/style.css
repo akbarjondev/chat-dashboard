@@ -42,6 +42,10 @@
   padding: 0px 20px;
   display: flex;
 }
+select {
+  background: none;
+  border: none;
+}
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px);
@@ -320,10 +324,6 @@
 .search-input::placeholder {
   color: #707C97;
 }
-select {
-  background: none;
-  border: none;
-}
 .select {
   font-weight: 500;
   line-height: 26px;
@@ -332,8 +332,6 @@ select {
   border: none;
   outline: none;
   margin-right: 20px;
-  background: none;
-  border: none;
 }
 .searcher-img {
   width: 24px;

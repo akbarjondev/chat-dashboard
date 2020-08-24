@@ -270,7 +270,7 @@
 
 /*chats*/
 .chats {
-  width: 616px;
+  width: 590px;
   height: 960px;
   margin-top: 110px;
   margin-left: 60px;
@@ -588,4 +588,33 @@
 }
 .opened .person__message {
   color: var(--main-white);
+}
+
+/*private*/
+.private {
+  width: 850px;
+  height: 930px;
+  margin: 110px auto 0;
+  border-radius: 6px 6px 0px 0px;
+  background-color: var(--main-white);
+}
+.private__top {
+  padding: 28px;
+  padding-left: 60px;
+  background-color: var(--main-gray-white);
+}
+.private__button {
+  width: 52px;
+  height: 52px;
+  background-color: var(--main-white);
+  box-shadow: 0 0 10px rgba(42, 139, 242, 0.20);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+  .private__button:active {
+    transform: scale(0.99);
+  }
+.private__button:first-child {
+  margin-right: 20px;
 }

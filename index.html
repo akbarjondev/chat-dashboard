@@ -77,6 +77,44 @@
 				
 					<button class="chats__button">Create new chat</button>
 				</div><!-- End of chats__top -->
+
+				<div class="chats__search-wrapper chats-box-shadow">
+					<form class="chats__search" action="https://echo.htmlacademy.ru" method="POST">
+						<div class="form-group form-group-search">
+							<label class="visually-hidden" aria-hidden="true" for="search">Search people, messages</label>
+							<input class="chats__input-search" type="search" id="search" name="key" placeholder="Search" autocomplete="off" spellcheck="false">
+						</div>
+						<div class="form-group form-group-select">
+							<label class="visually-hidden" aria-hidden="true" for="select">Search people, messages</label>
+							<select class="chats__input-select" name="group" id="select">
+								<option value="messages">Messages</option>
+								<option value="contacts">Contacts</option>
+							</select>
+						</div>
+					</form><!-- End of chats__search -->
+				</div><!-- End of chats__search-wrapper -->
+
+				<div class="chats__person chats-box-shadow">
+					<div class="person__top">
+						<img class="person__avatar" src="" alt="">
+
+						<div class="name-state">
+							<p class="person__name">Luy Robin</p>
+							<p class="person__state">
+								<img class="state__img typing" src="" alt="">
+								<span class="state__text">writes</span>
+							</p>
+						</div>
+
+						<p class="person__last-seen">1 minute ago</p>
+					</div><!-- End of person__top -->
+
+					<div class="person__bottom">
+						<p class="person__message">Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes).</p>
+						<div class="unread-messages" aria-label="Unread messages">2</div>
+					</div>
+				</div>
+
 			</div><!-- End of chats -->
 		</div><!-- End of dashboard -->
 	</div><!-- End of main -->

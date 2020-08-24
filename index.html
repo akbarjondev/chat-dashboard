@@ -64,7 +64,7 @@
 				<div class="chats__top">
 					<div class="top__left">
 						<h1 class="chats__heading">Chats</h1>
-						<ul class="chats__recent">
+						<ul class="chats__recent" tabindex="0">
 							<li class="chats__recent-item" id="jsRecentChats">Recent chats
 								<ul class="chats__dropdown" id="jsChatsDropdown">
 									<li class="chats__dropdown-item">Recent chats</li>
@@ -82,11 +82,11 @@
 					<form class="chats__search" action="https://echo.htmlacademy.ru" method="POST">
 						<div class="form-group form-group-search">
 							<label class="visually-hidden" aria-hidden="true" for="search">Search people, messages</label>
-							<input class="chats__input-search" type="search" id="search" name="key" placeholder="Search" autocomplete="off" spellcheck="false">
+							<input class="chats__input-search" type="search" id="search" name="key" placeholder="Search" autocomplete="off" spellcheck="false" required>
 						</div>
 						<div class="form-group form-group-select">
 							<label class="visually-hidden" aria-hidden="true" for="select">Search people, messages</label>
-							<select class="chats__input-select" name="group" id="select">
+							<select class="chats__input-select" name="group" id="select" required>
 								<option value="messages">Messages</option>
 								<option value="contacts">Contacts</option>
 							</select>
@@ -94,26 +94,118 @@
 					</form><!-- End of chats__search -->
 				</div><!-- End of chats__search-wrapper -->
 
-				<div class="chats__person chats-box-shadow">
-					<div class="person__top">
-						<img class="person__avatar" src="" alt="">
+				<a class="person__link" href="#">
+					<div class="chats__person chats-box-shadow">
+						<div class="person__top">
+								<img class="person__avatar" src="img/user-luy.jpg" srcset="img/user-luy.jpg 1x, img/user-luy@2x.jpg 2x" alt="Luy"  width="54"  height="54">
 
-						<div class="name-state">
-							<p class="person__name">Luy Robin</p>
-							<p class="person__state">
-								<img class="state__img typing" src="" alt="">
-								<span class="state__text">writes</span>
-							</p>
+							<div class="name-state">
+								<p class="person__name">Luy Robin</p>
+								<p class="person__state">
+									<img class="state__img typing" src="img/typing-icon.svg" width="15" height="5" alt="Typing">
+									<span class="state__text">writes</span>
+								</p>
+							</div>
+
+							<p class="person__last-seen">1 minute ago</p>
+						</div><!-- End of person__top -->
+
+						<div class="person__bottom">
+							<div class="message-wrapper">
+								<p class="person__message">Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes).</p>
+							</div>
+							<div class="unread-messages" aria-label="Unread messages">2</div>
+						</div><!-- End of person__bottom -->
+					</div><!-- End of chats__person -->
+				</a><!-- End of person__link -->
+				
+				<a class="person__link" href="#">
+					<div class="chats__person chats-box-shadow">
+						<div class="person__top">
+								<img class="person__avatar" src="img/user-jared.jpg" srcset="img/user-jared.jpg 1x, img/user-jared@2x.jpg 2x" alt="Jared"  width="54"  height="54">
+
+							<div class="name-state">
+								<p class="person__name">Jared Sunn</p>
+								<p class="person__state">
+									<img class="state__img typing" src="img/rec-icon.svg" width="12" height="12" alt="Recording">
+									<span class="state__text">records voice message</span>
+								</p>
+							</div>
+
+							<p class="person__last-seen">1 minute ago</p>
+						</div><!-- End of person__top -->
+
+						<div class="person__bottom">
+							<div class="message-wrapper">
+								<p class="person__message"><img class="person__message-img" src="img/mic-icon.svg" width="14" height="14" alt="Microphone" >Voice message (01:15)</p>
+								<div class="files-wrapper">
+									<span class="person__message-files">
+										<img class="person__message-files-img" src="img/file-icon.svg" width="20" height="20" alt="Files">
+										Files (x2)
+									</span>
+									<span class="person__message-photos">
+										<img class="person__message-files-img" src="img/image-icon.svg" width="20" height="20" alt="Photos">
+										Photo
+									</span>
+								</div>
+							</div>
+							<div class="unread-messages" aria-label="Unread messages">1</div>
 						</div>
+					</div><!-- End of chats__person -->
+				</a><!-- End of person__link -->
 
-						<p class="person__last-seen">1 minute ago</p>
-					</div><!-- End of person__top -->
+				<a class="person__link opened" href="#">
+					<div class="chats__person chats-box-shadow">
+						<div class="person__top">
+								<img class="person__avatar" src="img/user-nika.jpg" srcset="img/user-nika.jpg 1x, img/user-nika@2x.jpg 2x" alt="Luy"  width="54"  height="54">
 
-					<div class="person__bottom">
-						<p class="person__message">Most of its text is made up from sections 1.10.32–3 of Cicero's De finibus bonorum et malorum (On the Boundaries of Goods and Evils; finibus may also be translated as purposes).</p>
-						<div class="unread-messages" aria-label="Unread messages">2</div>
-					</div>
-				</div>
+							<div class="name-state">
+								<p class="person__name">Nika Jerrardo</p>
+								<p class="person__state">
+									<span class="state__text">last online 5 hours ago</span>
+								</p>
+							</div>
+
+							<p class="person__last-seen">3 days ago</p>
+						</div><!-- End of person__top -->
+
+						<div class="person__bottom">
+							<div class="message-wrapper">
+								<p class="person__message">Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
+							</div>
+						</div><!-- End of person__bottom -->
+					</div><!-- End of chats__person -->
+				</a><!-- End of person__link -->
+
+				<a class="person__link" href="#">
+					<div class="chats__person chats-box-shadow">
+						<div class="person__top">
+								<img class="person__avatar" src="img/user-david.jpg" srcset="img/user-david.jpg 1x, img/user-david@2x.jpg 2x" alt="Jared"  width="54"  height="54">
+
+							<div class="name-state">
+								<p class="person__name">David Amrosa</p>
+								<p class="person__state">
+									<span class="state__text">last online 5 hours ago</span>
+								</p>
+							</div>
+
+							<p class="person__last-seen">3 days ago</p>
+						</div><!-- End of person__top -->
+
+						<div class="person__bottom">
+							<div class="message-wrapper">
+								<p class="person__message">Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
+								<div class="files-wrapper">
+									<span class="person__message-videos">
+										<img class="person__message-files-img" src="img/video-icon.svg" width="20" height="20" alt="Files">
+										Video (x3)
+									</span>
+								</div>
+							</div>
+							<div class="unread-messages" aria-label="Unread messages">1</div>
+						</div>
+					</div><!-- End of chats__person -->
+				</a><!-- End of person__link -->
 
 			</div><!-- End of chats -->
 		</div><!-- End of dashboard -->

@@ -274,7 +274,7 @@
   height: 960px;
   margin-top: 110px;
   margin-left: 60px;
-  padding: 10px 10px 20px;
+  padding: 0 10px 20px;
   overflow-y: scroll;
   scrollbar-color: #b7bdcb transparent;
   scrollbar-width: 6px;
@@ -360,7 +360,7 @@
   font-size: 20px;
   line-height: 24px;
   color: var(--main-white);
-  background: linear-gradient(92.68deg, #7cb8f7 0%, #2a8bf2 100%);
+  background: linear-gradient(92.68deg, #7cb8f7 0%, var(--main-blue) 100%);
   box-shadow: 0px 3px 10px rgba(42, 139, 242, 0.20);
   border-radius: 6px;
   border: none;
@@ -578,7 +578,7 @@
   border-radius: 20px;
 }
 .opened .chats__person {
-  background: linear-gradient(96.78deg, #7CB8F7 0%, var(--main-blue) 100%);
+  background: linear-gradient(96.78deg, #7cb8f7 0%, var(--main-blue) 100%);
 }
 .opened .state__text {
   color: var(--main-white);
@@ -592,6 +592,8 @@
 
 /*private*/
 .private {
+  display: flex;
+  flex-direction: column;
   width: 850px;
   height: 930px;
   margin: 110px auto 0;
@@ -617,4 +619,85 @@
   }
 .private__button:first-child {
   margin-right: 20px;
+}
+.private__chat-box {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 29px 60px;
+  border: 1px solid red;
+}
+.chat-flow {
+  flex-grow: 1;
+  border: 1px solid green;
+}
+.private__chat-bottom {
+  display: flex;
+  flex-direction: column;
+  width: 730px;
+  height: 90px;
+  margin: 0 auto;
+}
+.line {
+  width: 722px;
+  height: 2px;
+  margin: 0 auto;
+  background-color: var(--main-gray-blue);
+  border: none;
+}
+.form-wrapper {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+.private__form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.private__form-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-image: linear-gradient(325.78deg, var(--main-blue) 14.76%, #7cb8f7 87.3%);
+  cursor: pointer;
+}
+.private__form-img {
+  display: block;
+}
+.private__form-group {
+  flex-grow: 1;
+}
+.private__form-input {
+  width: 100%;
+  font-weight: 500;
+  margin-left: 21px;
+  border: none;
+}
+.private__form-smile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 32px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.private__form-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  background-image: linear-gradient(325.78deg, var(--main-blue) 14.76%, #7cb8f7 87.3%);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
 }

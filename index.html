@@ -235,18 +235,166 @@
 				<div class="private__chat-box">
 					<div class="chat-flow">
 						
-					</div>
+						<!-- ******* private__message ******** -->
+						<div class="private__message message-me">
+							<div class="message__top">
+								<button class="private__settings">
+									<span class="settings__img"></span>
+								</button>
+								<div class="text-wrapper">
+									<p class="private__text">
+										Hello! I tweaked everything you asked. I am sending the finished file.
+										<a class="with-file" href="#">(52.05 Mb) New_Style.zip</a href="#">
+									</p>
+								</div>
+							</div>
+							<p class="private__time">3 days ago</p>
+						</div><!-- End of private__message -->
+						<!-- ******* end of private__message ******** -->
+
+						<div class="private__line">3 days ago</div>
+
+						<!-- ******* private__message ******** -->
+						<div class="private__message message-they">
+							<div class="message__top">
+								<button class="private__settings">
+									<span class="settings__img"></span>
+								</button>
+								<div class="text-wrapper">
+									<p class="private__text">
+										<a class="with-file" href="#">(40.5 Mb) Style.zip</a href="#">
+									</p>
+								</div>
+							</div>
+							<p class="private__time">4 days ago</p>
+						</div><!-- End of private__message -->
+						<!-- ******* end of private__message ******** -->
+
+						<!-- ******* private__message ******** -->
+						<div class="private__message message-me">
+							<div class="message__top seen">
+								<button class="private__settings">
+									<span class="settings__img"></span>
+								</button>
+								<div class="text-wrapper">
+									<p class="private__text">
+										Hey! Okay, send out.
+									</p>
+								</div>
+							</div>
+							<p class="private__time">4 days ago</p>
+						</div><!-- End of private__message -->
+						<!-- ******* end of private__message ******** -->
+					
+						<!-- ******* private__message ******** -->
+						<div class="private__message message-they">
+							<div class="message__top">
+								<button class="private__settings">
+									<span class="settings__img"></span>
+								</button>
+								<div class="text-wrapper">
+									<p class="private__text">
+										Can I send you files?
+									</p>
+								</div>
+							</div>
+							<p class="private__time">4 days ago</p>
+						</div><!-- End of private__message -->
+						<!-- ******* end of private__message ******** -->
+
+						<!-- ******* private__message ******** -->
+						<div class="private__message message-they">
+							<div class="message__top">
+								<button class="private__settings">
+									<span class="settings__img"></span>
+								</button>
+								<div class="text-wrapper">
+									<p class="private__text">
+										Hello! Finally found the time to write to you) I need your help in creating interactive animations for my mobile application.
+									</p>
+								</div>
+							</div>
+							<p class="private__time">4 days ago</p>
+						</div><!-- End of private__message -->
+						<!-- ******* end of private__message ******** -->
+
+						<!-- ******* private__message ******** -->
+						<div class="private__message message-me">
+							<div class="message__top seen">
+								<button class="private__settings">
+									<span class="settings__img"></span>
+								</button>
+								<div class="text-wrapper">
+									<p class="private__text">
+										Hey! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad nam, natus neque minima vitae quisquam cupiditate tenetur dolores quae dolor alias laboriosam voluptatem distinctio sunt doloribus expedita earum at possimus. Cumque vel, expedita aspernatur nulla explicabo reiciendis quam error minima?
+									</p>
+								</div>
+							</div>
+							<p class="private__time">4 days ago</p>
+						</div><!-- End of private__message -->
+						<!-- ******* end of private__message ******** -->
+
+						<!-- ******* private__message ******** -->
+						<div class="private__message message-they">
+							<div class="message__top">
+								<button class="private__settings">
+									<span class="settings__img"></span>
+								</button>
+								<div class="text-wrapper">
+									<p class="private__text">
+										Hello! Finally found the time to write to you) I need your help in creating interactive animations for my mobile application.
+									</p>
+								</div>
+							</div>
+							<p class="private__time">4 days ago</p>
+						</div><!-- End of private__message -->
+						<!-- ******* end of private__message ******** -->
+
+						<!-- ******* private__message ******** -->
+						<div class="private__message message-they">
+							<div class="message__top">
+								<button class="private__settings">
+									<span class="settings__img"></span>
+								</button>
+								<div class="text-wrapper">
+									<p class="private__text">
+										Hello! Finally found the time to write to you) I need your help in creating interactive animations for my mobile application.
+									</p>
+								</div>
+							</div>
+							<p class="private__time">4 days ago</p>
+						</div><!-- End of private__message -->
+						<!-- ******* end of private__message ******** -->
+
+					</div><!-- End of chat-flow -->
 				</div><!-- End of private__chat-box -->
 
 				<div class="private__chat-bottom">
 					<hr class="line">
 					<div class="form-wrapper">
 						<form class="private__form" method="POST" action="https://echo.htmlacademy.ru">
-							<button type="button" class="private__form-button plus-button">
+							<button class="private__form-button plus-button" id="jsOpenButtons" type="button">
 								<img class="private__form-img" src="img/w-plus.svg" width="24" height="24" alt="Plus">
 							</button>
+							<ul class="send-buttons__list" id="jsButtonsList">
+								<li class="send-buttons__item">
+									<button class="send-buttons__button" type="button">
+										<span class="send-buttons__img btn-media"></span>
+									</button>
+								</li>
+								<li class="send-buttons__item">
+									<button class="send-buttons__button" type="button">
+										<span class="send-buttons__img btn-image"></span>
+									</button>
+								</li>
+								<li class="send-buttons__item">
+									<button class="send-buttons__button" type="button">
+										<span class="send-buttons__img btn-file"></span>
+									</button>
+								</li>
+							</ul>
 							<div class="private__form-group">
-								<input class="private__form-input" type="text" required autocomplete="off" spellcheck="false" placeholder="Type a message here">
+								<input class="private__form-input" name="message" type="text" required autocomplete="off" spellcheck="false" placeholder="Type a message here">
 							</div>
 							<button type="button" class="private__form-smile">
 								<img class="private__form-smile-img" src="img/smile.svg" width="24" height="24" alt="Smile">

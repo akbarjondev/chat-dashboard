@@ -6,3 +6,7 @@ jsDropdownButton.onclick = () => {
 jsRecentChats.onclick = () => {
 	jsChatsDropdown.classList.toggle('dropdown-on')
 }
+
+jsOpenButtons.onclick = () => {
+	jsButtonsList.classList.toggle('send-buttons__list-on')
+}

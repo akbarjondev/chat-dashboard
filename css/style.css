@@ -776,8 +776,8 @@
 .private__message.message-me .seen::after {
   flex-shrink: 0;
   content: "";
-  width: 16px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   margin-left: 13px;
   background-image: url("../img/all-done.svg");
   background-position: center;
